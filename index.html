@@ -9,6 +9,8 @@ To change this template use Tools | Templates.
    {
        height: 46px;
        background: #adf;
+       vertical-align: middle;
+      line-height: 46px;
    }
       
    .block2
@@ -26,6 +28,36 @@ To change this template use Tools | Templates.
    {
     background-image: url(woven.png);
   }
+  .nav {
+    float: left;
+    cursor: pointer;
+    text-align: left;
+    height: 46px;
+    margin-left: 30px;
+    }
+
+    .nav li {
+    margin-right: -4px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.nav li:hover a, .nav .active a, .nav .active:hover{
+    /*background-color: #fff;*/
+    color: #666;
+    background-color: #fff!important;
+}
+
+.nav li a {
+    color:#fff;
+    padding: 0 20px;
+    line-height: 46px;
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
 
        
     }
@@ -37,10 +69,14 @@ To change this template use Tools | Templates.
 <body>
 
   <div class = "block1">
-    
+  <nav class="nav">
+    <li><a class="link" href="#">Text 1</a></li>  
+    <li><a class="link" href="#">Text 2</a></li>
+    <li><a class="link" href="#">Text 3</a></li>
+  </nav>
   </div>
 
-    <div class = "block2">
+  <div class = "block2">
     <p>xz</p>
   </div>
 
